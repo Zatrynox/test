@@ -1,0 +1,973 @@
+index,landingpage,login.c,login.j,menu_toggle.c,menu_toggle.j,Pie.c,styles.c
+...........................................
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login con Clave Estática</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="Pie.css" />
+  </head>
+  <body>
+    <section class="login-container">
+      <div class="login-box">
+        <h2>Escanea el QR</h2>
+        <a href="" class="logo">
+          <img
+            height="100"
+            width="100"
+            src=".png"
+            alt="logologin"
+          />
+        </a>
+        <h2>Acceso Restringido</h2>
+
+        <form onsubmit="return validarLogin(event);">
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Introduce tu email"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Clave de Acceso (ok)</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Introduce la clave secreta"
+              required
+            />
+          </div>
+
+          <button type="submit" class="login-button">Iniciar Sesión</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="login.js"></script>
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src=".png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>name</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+
+            <div class="social-icons-container">
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                  alt="Instagram"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                  alt="Twitter"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+</html>
+...........................................
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mi Web Site</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+
+  </head>
+  <body>
+    <nav class="topheader">
+    
+      <a href="" class="logo">
+        <img height="100" width="100" src=".png" alt="logo" />
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú">
+        &#9776;
+      </button>
+      <ul class="Menu-Horizontal">
+        <li><a href="">1</a></li>
+        <li>
+          <a href="">2</a>
+          <ul class="Menu-Vertical">
+            <li><a href="">a</a></li>
+            <li><a href="">b</a></li>
+            <li><a href="">c</a></li>
+            <li><a href="">d</a></li>
+          </ul>
+        </li>
+        <li><a href="">3</a></li>
+        <li><a href="">4</a></li>
+        <li><a href="">5</a></li>
+      </ul>
+    </nav>
+
+    <section class="seccion-Oferta">
+      <div class="div-general-Oferta">
+        <div class="div-Oferta-texto">
+          <h2>Quiénes somos</h2>
+
+          <p>
+            TEXT1.
+          </p>
+        </div>
+        <div class="div-prod-img">
+          <img src=".png" />
+        </div>
+      </div>
+    </section>
+    <div class="sub">
+      <h2> Destacado</h2>
+    </div>
+    <section class="seccion-per">
+      <div class="div-general-per">
+        <div class="div-per-texto">
+          <p>
+            text2
+          </p>
+        </div>
+        <div class="div-prod-vid">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/D99g9xa7BoU?si=MY7UJ04EInJvPaA4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="div-prod-vid2">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/SY-6WZ8fgVg?si=HS-xmBA0Et2L_hXi"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+    <section class="seccion-form">
+      <div class="div-form">
+        <h2>Formulario de Ayuda</h2>
+        <p>Completar todos los campos</p>
+        <form class="formulario-ayuda">
+          <div class="campo">
+            <label for="nombre"> Nombres Completos: </label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingresar Sus Nombres"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="Nombre"> País: </label>
+
+            <select id="pais" name="pais">
+              <option value="">Seleccione un Pais</option>
+              <option value="Perú">Perú</option>
+              <option value="Brazil">Brazil</option>
+              <option value="Chile">Chile</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label> Ayuda!: </label>
+            <ul class="lista-checbox">
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="a" />Pedido
+                  Urgente</label
+                >
+              </li>
+
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="b" />Pedido
+                  Malogrado</label
+                >
+              </li>
+
+              <li>
+                <label
+                  ><input type="checkbox" name="Intereses" value="c" />Ayuda con
+                  Pedido</label
+                >
+              </li>
+
+              <li>
+                <label
+                  ><input
+                    type="checkbox"
+                    name="Intereses"
+                    value="d"
+                  />Quejas</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="campo">
+            <label>Sexo:</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="masculino"
+                  />Maculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input
+                    type="radio"
+                    name="sexo"
+                    value="femenino"
+                  />Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="footer">
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img
+              src=".png"
+              alt="Logo"
+              class="footer-logo"
+            />
+            <p>name</p>
+            <small>© 2025 Todos los derechos reservados</small>
+          </div>
+
+          
+
+          <div class="footer-social">
+            <h4>Síguenos</h4>
+
+            <div class="social-icons-container">
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+                  alt="Facebook"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+                  alt="Instagram"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+                  alt="LinkedIn"
+                  class="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+                  alt="Twitter"
+                  class="social-icon"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <script src="menu_toggle.js"></script>
+  </script>
+  </body>
+</html>
+...........................................
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #fffeb4 0%, #ffc163 100%);
+  padding: 1.25rem; 
+}
+
+
+.login-box {
+  background: white;
+  padding: 2.5rem; 
+  border-radius: 0.625rem; 
+  box-shadow: 0 0.25rem 0.9375rem rgba(0, 0, 0, 0.2); 
+  width: 100%;
+  max-width: 25rem; 
+  text-align: center;
+}
+
+.login-box h2 {
+  font-family: sans-serif;
+
+  margin-bottom: 1.5625rem; 
+  color: #333;
+  font-size: 1.8rem;
+}
+
+
+.input-group {
+  margin-bottom: 1.25rem; 
+  text-align: left;
+}
+
+.input-group label {
+  font-family: sans-serif;
+  display: block;
+  margin-bottom: 0.5rem; 
+  font-weight: bold;
+  color: #555;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem; 
+  border: 1px solid #ccc;
+  border-radius: 0.3125rem; 
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #ffe159;
+  outline: none;
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem; 
+  border: none;
+  border-radius: 0.3125rem; 
+  background-color: #ffe159;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.625rem; 
+}
+
+.login-button:hover {
+  background-color: #ffe159;
+}
+
+
+
+@media (max-width: 600px) {
+  .login-container {
+    padding: 0; 
+    background: #fff; 
+    align-items: flex-start; 
+    min-height: auto;
+  }
+
+  .login-box {
+    padding: 1.5rem; 
+    margin-top: 2rem; 
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none; 
+    border-radius: 0; 
+    border: none;
+  }
+
+  .login-box h2 {
+    font-size: 1.7rem; 
+    text-align: left;
+  }
+
+  .input-group input {
+    padding: 1rem; 
+  }
+}
+@media (max-width: 900px) {
+  .login-card {
+    width: 90%;
+
+    padding: 1.5rem;
+  }
+
+  .login-left {
+    width: 60%;
+
+    padding: 1.5rem;
+  }
+
+  .login-right {
+    width: 40%;
+  }
+
+  .qr-image {
+    width: 12rem;
+  }
+
+  .login-title {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .login-card {
+    flex-direction: column;
+
+    width: 95%;
+
+    padding: 1.2rem;
+
+    align-items: center;
+  }
+
+  .login-left {
+    width: 100%;
+
+    padding: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .login-form {
+    width: 100%;
+
+    max-width: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .input-group-login {
+    width: 100%;
+  }
+
+  .input-group-login input {
+    width: 86% !important;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .login-title {
+    font-size: 1.35rem;
+  }
+
+  .qr-image {
+    width: 9.5rem;
+  }
+}
+...........................................
+
+function validarLogin(event) {
+  event.preventDefault();
+
+  const CLAVE_SECRETA = "ok";
+  const passwordInput = document.getElementById("password").value;
+
+  if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
+    alert("¡Acceso concedido! Bienvenido.");
+    window.location.href = "landingpage.html";
+  } else {
+    alert("Clave incorrecta. Inténtalo de nuevo.");
+    document.getElementById("password").value = "";
+  }
+
+  return false;
+}
+...........................................
+.menu-toggle {
+  display: none; 
+  font-size: 2rem; 
+  background: none; 
+  border: none; 
+  cursor: pointer;
+  margin-right: 1rem; 
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block; 
+    color: black;
+  }
+
+  .Menu-Horizontal {
+    display: none; 
+    flex-direction: column; 
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    top: 5rem; 
+    left: 0;
+  }
+
+  .Menu-Horizontal.active {
+    display: flex; 
+  }
+
+  .Menu-Horizontal li {
+    border-bottom: 1px solid #ccc; 
+  }
+}
+...........................................
+const btn = document.querySelector(".menu-toggle");
+
+const menu = document.querySelector(".Menu-Horizontal");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("active");
+
+});
+...........................................
+
+.footer {
+  background-color: #222222; 
+  color: white;
+  padding: 3rem 1rem; 
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; 
+  max-width: 75rem;
+  margin: auto;
+  gap: 2rem; 
+}
+
+
+.footer-brand,
+.footer-links,
+.footer-social {
+  flex: 1;
+  min-width: 12.5rem; 
+}
+
+.footer-logo {
+  width: 3.75rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 0.5rem 0; 
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.2); 
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  .footer-logo {
+    margin: 0 auto 1rem auto; 
+  }
+
+  .social-icons-container {
+    justify-content: center;
+  }
+
+  .footer-links,
+  .footer-brand,
+  .footer-social {
+    width: 100%; 
+  }
+}
+...........................................
+
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding-top: 4.375rem; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.topheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  height: 4.375rem;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+.Menu-Horizontal {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+.Menu-Horizontal li {
+  position: relative;
+}
+
+.Menu-Horizontal li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s;
+}
+
+.Menu-Horizontal li a:hover {
+  color: red;
+}
+
+.Menu-Vertical {
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 12rem;
+  background-color: silver;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Menu-Horizontal li:hover .Menu-Vertical {
+  display: block;
+}
+
+.Menu-Vertical li a {
+  padding: 1rem;
+  border-bottom: 1px solid #999;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.seccion-Oferta,
+.seccion-per {
+  padding: 3.75rem 1.25rem;
+}
+
+.seccion-Oferta {
+  background-color: white;
+}
+
+.seccion-per {
+  background-color: silver;
+}
+
+
+.div-general-Oferta,
+.div-general-per {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75rem;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.div-Oferta-texto,
+.div-per-texto,
+.div-prod-img {
+  flex: 1;
+}
+
+.div-Oferta-texto h2,
+.div-per-texto h2 {
+  font-family: sans-serif; 
+  text-align: center;
+  margin-bottom: 0.625rem;
+}
+
+.div-Oferta-texto p,
+.div-per-texto p {
+  text-align: justify;
+  color: black;
+  line-height: 1.5;
+}
+
+.div-prod-vid,
+.div-prod-vid2 {
+  flex: 1;
+}
+.div-prod-vid iframe,
+.div-prod-vid2 iframe {
+  width: 100%;
+  aspect-ratio: 16/9; 
+  height: auto;
+}
+
+.sub h2 {
+  text-align: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+
+.seccion-form {
+  background-color: antiquewhite;
+  padding: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+}
+
+.div-form {
+  padding: 1.875rem;
+  border: 0.125rem solid rgba(202, 172, 133, 0.767);
+  border-radius: 0.625rem;
+  width: 100%;
+  max-width: 31.25rem;
+  background-color: white;
+}
+
+.div-form h2 {
+  color: rgb(221, 166, 94);
+  text-decoration: underline;
+  text-align: center;
+}
+
+.div-form p {
+  color: rgb(221, 166, 94);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.campo {
+  padding: 0.938rem;
+  margin-bottom: 0.938rem;
+  border-radius: 0.5rem;
+  background-color: rgb(235, 184, 118);
+}
+
+.formulario-ayuda label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 0.625rem;
+  border-radius: 0.313rem;
+  border: 1px solid rgb(214, 132, 25);
+  background-color: white;
+}
+
+.lista-checbox,
+.lista-radio {
+  list-style: none;
+  padding: 0.625rem;
+  background-color: rgb(231, 209, 209);
+  border-radius: 0.938rem;
+}
+
+.lista-checbox input,
+.lista-radio input {
+  margin-right: 0.813rem;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: rgb(252, 162, 44);
+  color: rgb(100, 57, 0);
+  border: 1px solid rgb(100, 57, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .Menu-Horizontal {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4.375rem;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+    z-index: 9999; 
+  }
+
+  .Menu-Horizontal.active {
+    display: flex;
+  }
+
+  .Menu-Horizontal li {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  .Menu-Horizontal li:hover .Menu-Vertical {
+    display: none !important;
+  }
+
+  .Menu-Vertical {
+    display: none !important;
+    position: static;
+    width: 100%;
+    background-color: #f1f1f1;
+  }
+
+  
+  .div-general-Oferta,
+  .div-general-per {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .div-general-Oferta {
+    flex-direction: column-reverse;
+  }
+
+  .div-prod-img img {
+    margin: 0 auto;
+  }
+}
+
